@@ -13,13 +13,25 @@ const SOCKET_EVENTS = {
   error: 'error'
 }
 
+let socket = null
+
+function getSocketConnection(url) {
+  if (!socket) {
+    socket = io(url)
+  }
+  return socket
+}
+
+
+
 export class SocketHandler {
   /**
+   * @param {Boolean} requiresAuth
    * @param {String} url
    */
   constructor(requiresAuth = false, url = baseURL) {
     if (!useSockets) { return }
-    this.socket = io(url || baseURL)
+    this.socket = getSocketConnection(url || baseURL)
     this.requiresAuth = requiresAuth
     this.queue = []
     this.authenticated = false
@@ -30,8 +42,8 @@ export class SocketHandler {
   }
 
   on(event, fn) {
-     const ctx = this
-    this.socket?.on(event, function () {
+    const ctx = this
+    this.socket?.on(event, function() {
       try {
         fn.call(ctx, ...arguments)
       } catch (error) {
