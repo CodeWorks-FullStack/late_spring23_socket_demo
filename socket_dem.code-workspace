@@ -1,0 +1,59 @@
+
+{
+  "folders": [
+    {
+      "path": "socket_dem.client",
+      "name": "client"
+    },
+    {
+      "path": "socket_dem",
+      "name": "server"
+    }
+  ],
+  "settings": {
+    "editor.suggestSelection": "first",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "files.exclude": {
+      "**/.nyc_*": true,
+      "**/coverage": true,
+      "**/node_modules": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#b017b6",
+      "activityBar.background": "#b017b6",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#393707",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#e7e7e799",
+      "sash.hoverBorder": "#b017b6",
+      "statusBar.background": "#841189",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#b017b6",
+      "statusBarItem.remoteBackground": "#841189",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "titleBar.activeBackground": "#841189",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#84118999",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#841189"
+  }
+}

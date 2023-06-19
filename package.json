@@ -1,0 +1,13 @@
+
+  {
+    "name": "socket_dem",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd socket_dem.client && npm i",
+      "setup:server": "cd socket_dem && npm i",
+      "start": "node socket_dem/index.js"
+    }
+  }
+  
